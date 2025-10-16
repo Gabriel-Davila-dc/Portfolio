@@ -1,0 +1,107 @@
+/* ===== SEÇÃO SOBRE ===== */
+#sobre {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  max-height:100vh ;
+  text-align: start;
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 4, 255, 0.104));
+  overflow-wrap: break-word;
+  
+}
+
+/* ===== TEXTO DENTRO DE #SOBRE ===== */
+#sobre p {
+  position: absolute;
+  z-index: 0;
+  color: rgb(0, 0, 0);
+  text-align: right;
+  min-width: 100%;
+  max-height: 100vh;
+  font-size: 5rem;
+  letter-spacing: 7px;
+  background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 42, 255, 0.129));
+  overflow: hidden;
+}
+
+/* ===== PERFIL ===== */
+#perfil {
+    align-items: center;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(12, 12, 219);
+    box-shadow: 1px 2px 3px rgb(10, 10, 213);
+    border-radius: 15px;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+    width: 40%;
+    min-width: 600px;
+    margin: 5vh 0vh;
+    padding: 4vh 0vh;
+    z-index: 10;
+}
+
+/* ===== INFORMAÇÕES ===== */
+.informacao {
+  width: 55%;
+  text-align: center;
+  margin-top: 5%;
+}
+
+/* ===== TÍTULOS ===== */
+#perfil h1 {
+  font-size: 5rem;
+  color:rgb(3, 45, 124);
+}
+
+#perfil h2 {
+  font-size: 2.8rem;
+  margin-bottom: 2%;
+  color:rgb(3, 45, 124);
+
+}
+
+#perfil h3 {
+  font-size: 2rem;
+  margin-bottom: 2%;
+  color:rgb(3, 45, 124);
+}
+
+#perfil h4 {
+  font-size: 1.3rem;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 900px) {
+  .informacao {
+    width: 80%;
+  }
+  #perfil{
+    min-height: auto;
+  }
+}
+@media (max-width: 800px) {
+#perfil h2 {font-size: 3.1rem;}
+
+#perfil h3 {font-size: 2.4rem;}
+
+#perfil h4 {font-size: 1.6rem;}
+}
+ @media (max-width: 600px) {
+    #perfil{min-width: 90%;}
+ }
+
+@media (max-width: 450px) {
+  #perfil {
+    min-width: 100%;
+  }
+
+  .informacao {
+    width: 100%;
+  }
+}

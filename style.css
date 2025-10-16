@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+   
+}
+body{
+ background: linear-gradient(to right, rgb(18, 18, 18), rgba(0, 42, 255, 0.929) );
+    color: aliceblue;
+      padding-top: 1px; /* ajuste conforme a altura do header */
+         
+}
+
+/*--------------------------------- section geral -----------------------------------*/
+section{  
+  
+    height: 88vh;
+    color: rgba(240, 248, 255, 0);
+    text-align: start;
+    align-content: center;
+}
+
+section>h1{
+    font-size: 6.5em;
+    width: 60vw;
+    margin-left: 10vw;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+section>h2{
+    margin-top: 3vh;
+    font-size: 1.8em;
+    width: 40vw;
+    margin-top: 7vh;
+    margin-left: 10vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+section>h3{
+    margin-top: 3vh;
+    font-size: 1.2em;
+    width: 40vw;
+    margin-top: 5vh;
+    margin-left: 10vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.transi{
+    height: 12vh;
+    width:100vw;
+background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 42, 255, 0.192) );
+}
+
+/*--------------------------------- section 1 -----------------------------------*/
+section#sec1{
+    background: linear-gradient(to right, rgb(18, 18, 18), rgba(0, 42, 255, 0.929) );
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.subinfo{
+    display: flex;
+    margin-left: 10vw;
+    flex-direction: column;
+    width: 60vw;
+    gap: 2vh;
+}
+
+
+
+/*--------------------------------- section 2 -----------------------------------*/
+#sec2{
+    background: linear-gradient(to top, rgb(255, 255, 255), rgb(255, 255, 255) );
+    color: black;
+    height: auto;
+    padding: 2vh 0px;
+}
+/*--------------------------------- section 3 -----------------------------------*/
+section#hero{
+     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.979)5% ,  rgba(204, 204, 204, 0.929)90% ) ;
+    color: black;
+    display: block;
+    justify-items: center;
+    
+    height: auto;
+        
+}
+/* --------- div ---------*/
+#hero>div{
+    display: flex;
+    background-color: rgba(240, 248, 255, 0);
+    font-size: 3em;
+    color: aliceblue;
+    gap: 8vw;
+    margin-top: 8vh;
+}
+
+
+#hero>div>p>a{
+    color: aliceblue;
+    text-decoration:aliceblue;
+    text-align: center;
+    display: block;
+    font-size: 3rem;
+}
+
+.apresenta>p{
+    align-self: center;
+    font-size: 2.5rem;
+    text-align: center;
+    width: 30vw;}
+/* --------- resumo ---------*/
+
+.resumo{
+    margin-top: 15vh;
+    background-color: rgba(127, 255, 212, 0.952);
+    width: 80vw;
+    gap: 3vw;
+    text-shadow: 1px 1px 3px  black;}
+
+.resumo>p>{
+    display:flexbox;
+    flex-direction: column;
+    width: 40vw;
+}
+
+
+
+
+
+
+
+
+.apresenta>p{
+    align-self: center;
+    width: 30vw;}
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------*/
+img{
+    transition: 850ms;
+}
+
+img:hover{
+    transform: translateY(-20px);
+}
+.cell{
+    max-height: 78vh;
+    display: block;
+    
+}
+
+
+.munitor{
+    display: block;
+    max-height: 60vw;
+}
+
+.html{text-decoration: underline  rgba(223, 67, 5, 0.911);    color: aliceblue;}
+.css{text-decoration: underline   rgb(9, 102, 241);    color: aliceblue;}
+.javaScript{text-decoration: underline  rgba(255, 238, 0, 0.804);    color: aliceblue;}
+.php{text-decoration: underline   rgb(4, 0, 255);    color: aliceblue;}
+.mysql{text-decoration: underline   rgb(9, 167, 241);    color: aliceblue;}
+
+
+/*------------------------------------------------------------------------------------------------*/
+/*------------------------------------------respossivo--------------------------------------------*/
+/*------------------------------------------------------------------------------------------------*/
+
+
+ @media (max-width: 1500px) {
+    html{font-size: 0.9rem;}
+   #titulo{
+        font-size: 5.5rem;
+    }
+    #subtitulo{
+        font-size: 1.9rem;
+    }
+ }
+ @media (max-width: 1000px) {
+    html{font-size: 0.9rem;}
+   #titulo{
+        font-size: 4.4rem;
+    }
+    #subtitulo{
+        font-size: 1.7rem;
+    }
+
+    .apresenta p{font-size: 2rem;}
+ }
+ @media (max-width: 900px) {
+    html{font-size: 0.8rem;}
+    .transi{
+    height: 7vh;
+    }
+ }
+ @media (max-width: 800px) {
+    html{font-size: 0.7rem;}
+     #titulo{
+        font-size: 5.5rem;
+        min-width: 90%;
+    }
+ }
+ @media (max-width: 700px) {
+    html{font-size: 0.6rem;}
+    #subtitulo{font-size: 2.5rem;}
+    #subsubt{font-size: 1.7rem;}
+    .munitor{
+    height: 80%vw;
+}
+.apresenta {
+    font-size: 2.9rem;
+    padding: 0px 5px;
+    justify-content: space-evenly;
+}
+.cell{
+    max-height: 50vh;
+    display: block;
+    
+}
+.apresenta a:first-of-type {
+  display: none;
+}
+
+.resumo{
+    flex-direction: column;
+}
+.resumo p {order: 1;}
+.resumo a {order: 2;} }
+ @media (max-width: 500px) {
+    html{font-size: 0.55rem;}
+ }
+ @media (max-width: 450px) {
+    html{font-size: 0.5rem;}
+ }
+ @media (max-width: 400px) {
+    html{font-size: 0.45rem;}
+ }
+ @media (max-width: 350px) {
+    html{font-size: 0.4rem;}
+ }
