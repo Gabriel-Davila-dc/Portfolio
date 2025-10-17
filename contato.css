@@ -1,59 +1,64 @@
-#contato{
+#contato {
     display: flex;
-    background-color: black;
     justify-content: center;
-    align-content: center;
-    height: 90vh;
+    align-items: center; /* melhor que align-content */
+    background-color: black;
+    padding: 30px 0px;
+   height: auto;
     z-index: 2;
-    
 }
 
-form{
-    align-items: center;
-    font-size: 2rem;
-    color: black;
-    background-color: rgb(233, 233, 233);
+form {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(233, 233, 233);
     border: 1px solid rgb(12, 12, 219);
     box-shadow: 1px 2px 3px rgb(10, 10, 213);
+    gap: 5vh;
     border-radius: 15px;
-    height: auto;
-    justify-self: center;
-    align-self: center;
-    width: 40%;
-    min-width: 600px;
-    height: 80%;
+    width: 60%;
+    max-width: 500px; /* limita em telas pequenas */
+    padding: 20px; /* adiciona espaçamento interno */
+    font-size: 1.5rem; 
+    color: black;
     z-index: 3;
 }
 
-input{
-    margin: 5% 0%;
-    height: 5%;
-    width: 45%;
-    border-radius: 15px;
-}
-textarea{
-    margin: 10% 0%;
-    height: 15%;
-    width: 60%;
-    border-radius: 5px;
+input, textarea {
+    width: 80%; /* ocupa bem a tela */
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
 }
 
-button{
-     height: 40px;
-     width: 150px;
+textarea {
+    height: 120px; /* altura fixa mais confiável */
+}
+
+button {
+    height: 40px;
+    width: 150px;
     border-radius: 10px;   
     color: white;
     background-color: rgb(0, 69, 172);
-    transition: 1s;
+    transition: 0.3s;
 }
-button:hover{
+button:hover {
     background-color: rgb(4, 91, 221);
-     border: 3px solid black;
+    border: 3px solid black;
 }
 
- @media (max-width: 600px) {
-    form{min-width: 100%;}
- }
+/* Media query para celulares */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+    input, textarea {
+        width: 95%;
+    }
+}
