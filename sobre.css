@@ -1,29 +1,28 @@
 /* ===== SEÇÃO SOBRE ===== */
 #sobre {
+  position: relative; /* precisa disso pro p se basear nele */
   display: flex;
   justify-content: center;
   width: 100%;
   height: auto;
-  padding: 5vh 0vh;
+  padding: 5vh 0;
   text-align: start;
   background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 4, 255, 0.104));
   overflow-wrap: break-word;
-  
 }
 
-/* ===== TEXTO DENTRO DE #SOBRE ===== */
 #sobre p {
   position: absolute;
+  inset: 0; /* cobre todo o #sobre, ignorando padding */
   z-index: 0;
   color: rgb(0, 0, 0);
   text-align: right;
-  min-width: 100%;
-  max-height: 100vh;
   font-size: 5rem;
   letter-spacing: 7px;
-  background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 42, 255, 0.129));
+  background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 28, 141, 0.363)83%);
   overflow: hidden;
 }
+
 
 /* ===== PERFIL ===== */
 #perfil {
